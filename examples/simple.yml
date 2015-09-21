@@ -1,0 +1,10 @@
+paths:
+    simple_root: .
+example:
+    dog:
+        noise: woof
+        monologue: monologue1.txt
+    cat:
+        noise: meow
+        monologue: monologue2.txt
+
