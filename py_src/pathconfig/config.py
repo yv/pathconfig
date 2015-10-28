@@ -62,7 +62,7 @@ class AppContext(object):
             if e[0] == '$':
                 try:
                     result = result[env[e[1:]]]
-                except KeyError, ex:
+                except KeyError as ex:
                     try:
                         result = result['.default']
                     except KeyError:
@@ -104,7 +104,7 @@ def load_configuration(app_name):
             os.path.expanduser('~/.%s.yml'%(app_name,)),
             os.path.join(conf_dir, '%s.yml'%(app_name,))]:
         if os.path.exists(fname):
-            yml_config = yaml.load(file(fname))
+            yml_config = yaml.load(open(fname))
             break
     try:
         data_dir = yml_config['paths']['data_dir']

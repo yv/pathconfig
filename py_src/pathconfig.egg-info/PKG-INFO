@@ -1,6 +1,6 @@
 Metadata-Version: 1.0
 Name: pathconfig
-Version: 1.0
+Version: 1.0.1a0
 Summary: On-demand loading and configurable paths
 Home-page: https://github.com/yv/pathconfig
 Author: Yannick Versley
